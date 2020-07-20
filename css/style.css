@@ -851,6 +851,9 @@
 			border-right: 1px solid;
 			border-color: rgba(255,255,255,.1);
 		}
+		#nav > ul > li a:hover {
+			background-color: #115151;
+		  }
 		
 			#nav > ul > li:last-child
 			{
@@ -873,7 +876,9 @@
 
 			#nav li.active a
 			{
-				color: #ffffff;
+				color: #000000;
+				background: rgba(255, 255, 255, 0.842);
+				/*font-weight: bold;*/
 			}
 
 			#nav > ul > li > ul
