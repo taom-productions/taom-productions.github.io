@@ -1198,7 +1198,7 @@ Barra lateral de servicios:
 	margin: 0;
 	padding: 0;
 	width: 25%;
-	max-width: 150px;
+	max-width: 170px;
 	background-color: #f1f1f1;
 	
 	/*position: absolute;*/
@@ -1269,7 +1269,7 @@ Barra lateral de servicios:
   */
   @media screen and (min-width: 600px) {
 	.servicios{
-	  margin-left: 150px;
+	  margin-left: 170px;
 	  /*max-width: 750px;  /*OPCIONAL */ 
 	}
   }
