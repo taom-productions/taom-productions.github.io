@@ -21,7 +21,8 @@
 
 	body,input,textarea,select
 	{
-		font-family: 'Roboto', sans-serif;
+		/*font-family: 'Roboto', sans-serif;*/
+		font-family: 'Open Sans';
 		font-size: 11pt;
 		font-weight: 300;
 		line-height: 1.75em;
@@ -30,6 +31,7 @@
 
 	h1,h2,h3,h4,h5,h6
 	{
+		font-family: 'Lustrie';
 		font-weight: 300;
 		color: #777;
 	}
@@ -810,15 +812,19 @@
 			font-weight: 300;
 			line-height: 1em;
 			font-size: 7em;
-			color: #FFF;
-			letter-spacing: -0.05em;
+			/*color: #FFF;*/
+			color: rgba(255, 255, 255, 0.85);
+			/*letter-spacing: -0.05em;*/
+			letter-spacing: 0.125em;
 			margin: 0 0 0.125em 0;
+			
 		}
 		
 		#logo span
 		{
 			font-size: 1.4em;
-			color: #FFF;
+			/*color: #FFF;*/
+			color: rgba(255, 255, 255, 0.85);
 		}
 
 /*********************************************************************************/
@@ -848,8 +854,8 @@
 		#nav > ul > li
 		{
 			display: inline-block;
-			border-right: 1px solid;
-			border-color: rgba(255,255,255,.1);
+			/*border-right: 1px solid;
+			border-color: rgba(255,255,255,.1);*/
 		}
 		#nav > ul > li a:hover {
 			background-color: #115151;
@@ -885,15 +891,16 @@
 			{
 				display: none;
 			}
-.active.logo{
-	flex : 1 1 auto;
-	margin-left: 1.0%;
-	/*text-transform: uppercase;*/
-	letter-spacing: 1px;
-	font-weight: bold;
-	font-size: 1.1em;
-}
-	
+			
+			.active.logo{
+				flex : 1 1 auto;
+				margin-left: 1.0%;
+				/*text-transform: uppercase;*/
+				letter-spacing: 1px;
+				font-weight: bold;
+				font-size: 1.1em;
+			}
+				
 /*********************************************************************************/
 /* Main                                                                          */
 /*********************************************************************************/
@@ -925,8 +932,10 @@
 	
 	#footer
 	{
+		padding: 2.5em 0em;
 		position: relative;
 		text-align: center;
+		clear: both;
 	}
 	
 	#footer header h2
@@ -952,8 +961,8 @@
 	
 	#copyright .container
 	{
-		padding: 3em 0em;
-		border-top: 1px solid;
+		padding: 2em 0em;
+		border-top: 2px solid;
 		border-color: rgba(255,255,255,.05);
 		color:  rgba(255,255,255,.1);
 	}
@@ -1030,3 +1039,241 @@
 			font-weight: 300;
 			color: rgba(255,255,255,.6);
 		}	
+
+/*********************************************************************************/
+/* NOSOTROS                                                                      */
+/*********************************************************************************/
+/*MOBILE*/
+.nosotros {
+	width: 100%;
+	display: block;
+}
+
+.img-info {
+    width: 100%;
+}
+
+.img-info h2.nombre {
+    font-size: 35px;
+    text-align: center;
+    color: #111;
+    line-height: 20px;
+}
+
+.img-info h2.puesto {
+    padding-top: 10px;
+    font-size: 15px;
+    text-align: center;
+    color: #111;
+}
+
+
+.img-info p {
+	width: 100%;
+    font-size: 16px;
+    color: #111;
+	line-height: 18px;
+	text-align: justify;
+	
+}
+
+.img-avatar {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.socialmedia {
+	margin-top: 12px;
+	text-align: center;
+
+}
+.socialmedia a{
+	margin: 0 4px;
+	display: inline-block;
+	font-size: 1.5em;
+	width: 30px;
+	height: 30px;
+	transition: 0.1s;
+	
+}
+.socialmedia a:hover{
+	transform: scale(1.25);
+}
+.socialmedia a i{
+	color: black;
+	line-height: 30px;
+}
+
+/*TABLET*/
+@media only screen and (min-width: 481px){
+	.nosotros{
+		display: block;
+		/*border: 1px solid black;*/
+		width: 750px;
+		margin: auto;
+		clear: both;
+	}
+	.img-info h2.nombre {
+		padding-top: 5px;
+	}
+	
+	.img-info h2.puesto {
+		padding-top: 10px;
+		font-size: 15px;
+		text-align: center;
+		color: #111;
+	}
+
+	.img-info p {
+		font-size: 12px;
+		line-height: 14px;
+		padding: 0px 20px 0px 20px;
+	}
+/*
+	.img-avatar{
+		border-radius: 20%;
+	}
+*/
+	.img-avatar.A {
+		display: block;
+		padding-top: 10px;
+		width: 35%;
+		display: inline-block;
+	}
+	.img-info.A{
+		width: 65%;
+		float: right;
+		padding-left: 0px;
+	}
+
+	.img-info.B{
+		width: 65%;
+		float: left;
+	}
+	
+	.img-avatar.B {
+		display: block;
+		padding-top: 10px;
+		width: 35%;
+		display: inline-block;
+	}
+}
+/*DESKTOP*/
+@media only screen and (min-width: 1000px){
+.nosotros{
+	width: 800px;
+	margin: auto;
+	display: block;
+}
+}
+
+/*********************************************************************************/
+/* SERVICIOS                                                                     */
+/*********************************************************************************/
+
+/*
+	ESTILOS Y FUENTES
+*/
+#main .servicios{
+	color: black;
+}
+.servicios > h1{
+	color: black;
+	font-weight: bold;
+	font-size: 3em;
+}
+
+.servicios > h2{
+	color: black;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+/*==================================================
+Barra lateral de servicios:
+==================================================*/
+
+.nav-servicios {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 25%;
+	max-width: 150px;
+	background-color: #f1f1f1;
+	
+	/*position: absolute;*/
+	position: sticky;
+	top: 0px;
+	
+	/*height: 100%;*/
+	/*height: 360px;*/
+	/*Se ajusta al alto del dispositivo, problema si es muy grande la altura*/
+	height: 100vh;
+	
+	overflow: auto;
+	float: left;
+  }
+
+/*Solucion tentativa a la altura exagerada*/
+  @media screen and (min-height: 1024px) {
+	.nav-servicios{
+		height: 1024px;
+	}
+  }
+
+
+  /*
+  ==================================================
+  Elementos principales:
+  ==================================================
+  */
+  .nav-servicios li a {
+	display: block;
+	color: #000;
+	padding: 6px 16px;
+	text-decoration: none;
+	font-weight: bold;
+  }
+  
+  
+  .nav-servicios li a:hover:not(.active) {
+	background-color: #555;
+	color: white;
+  }
+  /*
+  ==================================================
+  Elementos secundarios o subservicios
+  ==================================================
+  */
+  li.sub > a{
+	padding: 4px 5px;
+	padding-left: 25px;
+	font-weight: normal;
+  }
+  /* 
+  ==================================
+	TEXTO de servicios
+  ==================================
+  */
+  .servicios {
+	margin-left: 25%;
+	padding: 1px 16px;
+    /*height: 1000px;*/
+  }
+  
+  /* 
+  ==================================
+	Relacion de aspecto en modo
+	tableta y escritorio
+  ==================================
+  */
+  @media screen and (min-width: 600px) {
+	.servicios{
+	  margin-left: 150px;
+	  /*max-width: 750px;  /*OPCIONAL */ 
+	}
+  }
+
+/*
+FIN SERVICIOS  
+*/
