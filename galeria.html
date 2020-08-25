@@ -66,33 +66,43 @@
 			<div class="container">
 				<div class="gallery-row">
 					<div class="gallery-column">
-						<img src="images/galeria/taomblack.jpg" style="width:100%">
-						<img src="images/galeria/barbon.jpg" style="width:100%">
-						<img src="images/galeria/Galactic-time.png" style="width:100%">
-						<img src="images/galeria/ian.jpg" style="width:100%">
-						<img src="images/galeria/Jazz.png" style="width:100%">
+						<img src="images/galeria/taomblack.jpg" onclick="mostrarImg(this);" style="width:100%">
+						<img src="images/galeria/barbon.jpg" onclick="mostrarImg(this);" class="hover-shadow" style="width:100%">
+						<img src="images/galeria/Galactic-time.png" onclick="mostrarImg(this);" class="hover-shadow" style="width:100%">
+						<img src="images/galeria/ian.jpg" onclick="mostrarImg(this);" class="hover-shadow" style="width:100%">
+						<img src="images/galeria/Jazz.png" onclick="mostrarImg(this);" style="width:100%">
 				  </div>
 
 				  <div class="gallery-column">
-						<img src="images/galeria/Le-Festin.png" style="width:100%">
-						<img src="images/galeria/lets-feel-it-now.png" style="width:100%">
-						<img src="images/galeria/mic_akg.jpg" style="width:100%">
-						<img src="images/galeria/mic_pga.jpg" style="width:100%">
-						<img src="images/galeria/Ocean-Dance.png" style="width:100%">
+						<img src="images/galeria/Le-Festin.png" onclick="mostrarImg(this);"  style="width:100%">
+						<img src="images/galeria/lets-feel-it-now.png" onclick="mostrarImg(this);" style="width:100%">
+						<img src="images/galeria/mic_akg.jpg" onclick="mostrarImg(this);" style="width:100%">
+						<img src="images/galeria/mic_pga.jpg" onclick="mostrarImg(this);" style="width:100%">
+						<img src="images/galeria/Ocean-Dance.png" onclick="mostrarImg(this);" style="width:100%">
 				  </div>
 
 				  <div class="gallery-column">
-						<img src="images/galeria/Taking-a-walk.png" style="width:100%">
-						<img src="images/galeria/Taking-my-time.png" style="width:100%">
-						<img src="images/galeria/mic_pga.jpg" style="width:100%">
-						<img src="images/galeria/Galactic-time.png" style="width:100%">
-						<img src="images/galeria/lets-feel-it-now.png" style="width:100%">
+						<img src="images/galeria/Taking-a-walk.png" onclick="mostrarImg(this);" style="width:100%">
+						<img src="images/galeria/Taking-my-time.png" onclick="mostrarImg(this);" style="width:100%">
+						<img src="images/galeria/mic_pga.jpg" onclick="mostrarImg(this);" style="width:100%">
+						<img src="images/galeria/Galactic-time.png" onclick="mostrarImg(this);" style="width:100%">
+						<img src="images/galeria/lets-feel-it-now.png" onclick="mostrarImg(this);" style="width:100%">
 				  </div>
 				</div>
 				</div>
 			</div>
 		</div>
 	<!-- /Galería -->
+
+
+	<!-- The Modal-->
+	<div id="myModal" class="modal">
+	  <span class="close cursor" onclick="closeModal()">&times;</span>
+	  <div class="modal-content">
+				<img id="expandedImg" style="width:100%">
+	  </div>
+	</div>
+
 
 	<!-- Footer -->
 	<footer class="cont-foot">
@@ -113,7 +123,7 @@
 					<div class="footer-section-2">
 						<p class="title">¡Que gusto que seas parte de este sueño!</p>
 						<div align="center">
-								<img src="images/taomblack.jpg" width="50%" height="50%">
+								<img src="images/taomcirculo.png" width="50%" height="50%">
 						</div>
 					</div>
 
@@ -133,7 +143,7 @@
 	<!-- Copyright -->
 		<div id="copyright">
 			<div class="container">
-				Designed by <a href="http:www.github.com/taom-producciones/">TaOm Developement team</a> with love.
+				Designed by <a href="http:www.github.com/taom-producciones/">Ta' Om Developement team</a> with love.
 				<!--Images: <a href="http://unsplash.com">Unsplash</a>
 				(<a href="http://unsplash.com/cc0">CC0</a>) -->
 			</div>

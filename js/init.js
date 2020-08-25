@@ -52,6 +52,21 @@ skel.init({
 			}
 		}
 	}
-	
-	
+
+
 });
+
+//Para la galería de fotos
+
+function mostrarImg(imgs) {
+	 document.getElementById("myModal").style.display = "block"; //cierra la ventana modal
+  var expandImg = document.getElementById("expandedImg");  // declara variable
+  expandImg.src = imgs.src;  // asigna la foto a la variable
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none"; // cierra la ventana modal
+}
+
+
+//fin de Gallería
