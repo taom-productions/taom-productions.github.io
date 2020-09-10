@@ -1343,7 +1343,6 @@
 	background: #fff;
 }
 
-
 /*
 	ESTILOS Y FUENTES
 */
@@ -1375,169 +1374,156 @@ Barra lateral de servicios:
 	width: 25%;
 	background-color: #f1f1f1;
 
-	/*position: absolute;*/
 	position: sticky;
-	top: 0px;
-
-	/*height: 100%;*/
-	/*height: 360px;*/
-	/*Se ajusta al alto del dispositivo, problema si es muy grande la altura*/
+	top: 45px; /*Por la barra de nav de arriba*/
 	height: 100vh;
 
 	overflow: auto;
 	float: left;
-  }
-
-	.nav-servicios a{
-		font-size: .5rem;
-	}
-
-
-  /*
-  ==================================================
-  Elementos principales:
-  ==================================================
-  */
-  .nav-servicios li a {
-	display: block;
-	color: #000;
-	padding: 6px 16px;
-	text-decoration: none;
-	font-weight: bold;
-  }
-
-
-  .nav-servicios li a:hover:not(.active) {
-	background-color: #555;
-	color: white;
-  }
-  /*
-  ==================================================
-  Elementos secundarios o subservicios
-  ==================================================
-  */
-  li.sub > a{
-	padding: 4px 5px;
-	padding-left: 25px;
-	font-weight: normal;
-  }
-  /*
-  ==================================
-	Contenido de servicios
-  ==================================
-  */
-.container-servicios{
-
 }
+
+/*
+==================================================
+Elementos principales:
+==================================================
+*/
+.nav-servicios li a {
+display: block;
+color: #000;
+padding: 6px 16px;
+text-decoration: none;
+font-weight: bold;
+}
+
+
+.nav-servicios li a:hover:not(.active) {
+background-color: #555;
+color: white;
+}
+/*
+==================================================
+Elementos secundarios o subservicios
+==================================================
+*/
+li.sub > a{
+padding: 4px 5px;
+padding-left: 25px;
+font-weight: normal;
+}
+/*
+==================================
+Contenido de servicios
+==================================
+*/
 
 .invisible{
 	opacity: 0;
 }
 
-  .servicios {
-	margin-left: 25%;
-	padding: 1px 16px;
-    /*height: 1000px;*/
-  }
+.servicios {
+margin-left: 25%;
+padding: 1px 16px;
+/*height: 1000px;*/
+}
 
 
-	/* Create three columns of equal width */
-	.descripcion{
-		font-size: 25px;
-		text-align: center;
-		padding: 8px;
-		margin-top: auto;
-	}
+/* Create three columns of equal width */
+.descripcion{
+	font-size: 25px;
+	text-align: center;
+	padding: 8px;
+	margin-top: auto;
+}
 
-	.cont-prod-type{
-		display: flex;
-		flex-direction: column;
-	}
+.cont-prod-type{
+	display: flex;
+	flex-direction: column;
+}
 
-	.columns-prod-type {
-	  float: left;
-	  width: 100%%;
-	  padding: 8px;
-	}
+.columns-prod-type {
+	float: left;
+	width: 100%;
+	padding: 8px;
+}
 
-	/* Style the list */
-	.price {
-	  list-style-type: none;
-	  border: 1px solid #eee;
-	  margin: 0;
-	  padding: 0;
-	  -webkit-transition: 0.3s;
-	  transition: 0.3s;
-	}
+/* Style the list */
+.price {
+	list-style-type: none;
+	border: 1px solid #eee;
+	margin: 0;
+	padding: 0;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
 
-	/* Add shadows on hover */
-	.price:hover {
-	  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
-	}
+/* Add shadows on hover */
+.price:hover {
+	box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
 
-	/* Pricing header */
-	.price .header {
-	  background-color: #111;
-	  color: white;
-	  font-size: 25px;
-	}
+/* Pricing header */
+.price .header {
+	background-color: #111;
+	color: white;
+	font-size: 25px;
+}
 
-	/* List items */
-	.price li {
-	  border-bottom: 1px solid #eee;
-	  padding: 10px;
-	  text-align: center;
-	}
+/* List items */
+.price li {
+	border-bottom: 1px solid #eee;
+	padding: 10px;
+	text-align: center;
+}
 
-	/* Grey list item */
-	.price .grey {
-	  background-color: #eee;
-	  font-size: 15px;
-	}
+/* Grey list item */
+.price .grey {
+	background-color: #eee;
+	font-size: 15px;
+}
 
-	/* The "Sign Up" button */
-	.button {
-	  background-color: #4CAF50;
-	  border: none;
-	  color: white;
-	  padding: 10px 25px;
-	  text-align: center;
-	  text-decoration: none;
-	  font-size: 18px;
-	}
+/* The "Sign Up" button */
+.button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 18px;
+}
 
 
-		/* Gallery de servicios */
+/* Gallery de servicios */
 .cont-gallery-serv{
 	display: flex;
 	position: static;
 }
 
-	.servicios-gallery{
-		float: left;
-		width: 100%;
-	}
+.servicios-gallery{
+	float: left;
+	width: 100%;
+}
 
-		.servicios-row {
-				display: flex;
-				flex-wrap: wrap;
-				padding: 0 4px;
-		}
+.servicios-row {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
+}
 
-		.servicios-column {
-		flex: 33.33%;
-		max-width: 33.33%;
-		padding: 0 4px;
-	}
+.servicios-column {
+flex: 33.33%;
+max-width: 33.33%;
+padding: 0 4px;
+}
 
-	.servicios-column img {
-		margin-top: 8px;
-		vertical-align: middle;
-		width: 100%;
-		height: auto;
-	}
+.servicios-column img {
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+	height: auto;
+}
 
-	.middle-text {
+.middle-text {
   transition: .5s ease;
   opacity: 0;
   position: absolute;
@@ -1573,7 +1559,6 @@ text-align: center;
 }
 
 .text-overlay-info {
-
   background-color: rgba(70, 168, 224,0.5);
   color: white;
   font-size: 16px;
@@ -1616,9 +1601,6 @@ text-align: center;
 	max-height: 315px;
 }
 
-.cont-titulo{
-
-}
 
 .img-cont{
 	height: 70px;
@@ -1633,67 +1615,94 @@ text-align: center;
 }
 
 .img-cont > h3{
-	font-size: .7rem;
+	font-size: 0.7rem;
+	text-align: center;
 }
 
+/*
+==================================
+Relacion de aspecto en modo
+tableta y escritorio
+==================================
+*/
+/*tamaño < 480px es celular en esta plantilla */
 
-
-
-  /*
-  ==================================
-	Relacion de aspecto en modo
-	tableta y escritorio
-  ==================================
-  */
-  @media only screen and (min-width: 600px) {
-	.nav-servicios{
-			width: 18%;
-			max-width: 15.6rem;  /*OPCIONAL */
-}
-	.servicios{
-		margin-left: 18%;
-	  /*max-width: 750px;  /*OPCIONAL */
-	}
+/*Tablet 480 - 768*/
+@media only screen and (min-width: 481px){
 	.cont-prod-type {
 		flex-direction: row;
 	}
-	.video-cont{
-		width: 35rem;
-		height: 19.6875rem;
-	}
-	.servicios h1{
-		font-size: 3em;
-		text-align: left;
-	}
-	.img-cont > p{
-		font-size: 1rem;
-	}
+}
 
-	.img-cont > h2{
-		font-size: 1.2rem;
+@media only screen and (min-width: 600px) {
+.nav-servicios{
+	top: 0px;
+	width: 18%;
+	max-width: 200px;  /*OPCIONAL */
+}
+.servicios{
+	margin-left: 18%;
+	/*max-width: 753px;*/
+}
+/*.cont-prod-type {
+	flex-direction: row;
+}*/
+.video-cont{
+	width: 35rem;
+	height: 19.6875rem;
+}
+.servicios h1{
+	font-size: 3em;
+	text-align: left;
+}
+.img-cont > p{
+	font-size: 1rem;
+}
+
+.img-cont > h2{
+	font-size: 1.2rem;
+}
+.img-cont > h3{
+	font-size: 1.2rem;
+}
+.nav-servicios a{
+	font-size: 1rem;
+}
+
+.cont-video{
+	padding: 20px;
+}
+.modal-content {
+	width: 50%;
+}
+
+}
+
+/* Laptop desde 1000px */
+@media only screen and  (min-width: 1200px){
+	.servicios{
+		margin-left: 200px;
+		width: 80%;
+		padding-left: 4.77%;
 	}
+}
+
+@media only screen and (min-width: 1441px){
 	.img-cont > h3{
-		font-size: 1.2rem;
-	}
-	.nav-servicios a{
-		font-size: 1rem;
+		font-size: 1.7rem;
+		padding: 10px;
 	}
 
-	.cont-video{
-		padding: 20px;
+	.servicios{
+		margin-left: 175px;
+		max-width: 1000px;
+		padding: 1px 16px 1px 16px;
 	}
-	.modal-content {
-	  width: 50%;
+	.container-servicios{
+		margin: auto;
+		width: 960px;
 	}
-
-  }
-
-	@media only screen and (min-width: 1200px){
-		.img-cont > h3{
-			font-size: 1.7rem;
-			padding: 10px;
-		}
-	}
+}
 
 
 /*
