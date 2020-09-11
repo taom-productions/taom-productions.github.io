@@ -65,8 +65,8 @@
                 <!-- SUBSERVICIO: <li class="sub"><a href="# "> </a></li> -->
                 <li><a href="#audio">Audio</a></li>
 
-                <li class="sub"><a id="NavStream" href="#au-stream" onclick="desseleccionar(); seleccionar('NavStream')">Streaming</a></li>
-                <li class="sub"><a id="NavBeat" href="#au-beat" onclick="desseleccionar();seleccionar('NavBeat')">Beat making</a></li>
+                <li class="sub"><a href="#au-stream" onclick="desseleccionar(); seleccionar('NavStream')">Streaming</a></li>
+                <li class="sub"><a href="#au-beat" onclick="desseleccionar();seleccionar('NavBeat')">Beat making</a></li>
                 <li class="sub"><a href="#au-cover" onclick="desseleccionar();seleccionar('NavCover')">Cover</a></li>
                 <li class="sub"><a href="#au-single" onclick="desseleccionar();seleccionar('NavSingle')">Single </a></li>
                 <li class="sub"><a href="#au-album" onclick="desseleccionar();seleccionar('NavAlbum')">Álbum</a></li>
@@ -76,24 +76,25 @@
                 <li class="sub"><a href="#au-adr" onclick="desseleccionar();seleccionar('NavAdr')">ADR </a></li>
                 <li class="sub"><a href="#au-mezcla" onclick="desseleccionar();seleccionar('NavMix')">Mezcla</a></li>
                 <li class="sub"><a href="#au-master" onclick="desseleccionar();seleccionar('NavMaster')">Masterización </a></li>
+                <li class="sub"><a href="#au-rest" onclick="desseleccionar();seleccionar('NavRest')">Restauración </a></li>
 
 
                 <li><a href="#video">Video</a></li>
 
-                <li class="sub"><a href="#vi-live-s">Live-session</a></li>
-                <li class="sub"><a href="#vi-cover">Cover</a></li>
-                <li class="sub"><a href="#vi-videclip">Videoclip</a></li>
-                <li class="sub"><a href="#vi-promo">Promocional</a></li>
+                <li class="sub"><a href="#video">Live-session</a></li>
+                <li class="sub"><a href="#video">Cover</a></li>
+                <li class="sub"><a href="#video">Videoclip</a></li>
+                <li class="sub"><a href="#video">Promocional</a></li>
 
                 <li><a href="#acustica">Acústica</a></li>
 
-                <li class="sub"><a href="#ac-panel">Paneles Acústicos</a></li>
-                <li class="sub"><a href="#ac-diseno">Diseño Acústico </a></li>
+                <li class="sub"><a href="#acustica">Paneles Acústicos</a></li>
+                <li class="sub"><a href="#acustica">Diseño Acústico </a></li>
 
                 <li><a href="#dev">Development</a></li>
-                <li class="sub"><a href="#dev-vst">VST (Audio plugin)</a></li>
-                <li class="sub"><a href="#dev-ir">IR</a></li>
-                <li class="sub"><a href="#dev-biaural">Experiencias Biaurales</a></li>
+                <li class="sub"><a href="#dev">VST (Audio plugin)</a></li>
+                <li class="sub"><a href="#dev">IR</a></li>
+                <li class="sub"><a href="#dev">Experiencias Biaurales</a></li>
             </ul>
 
 
@@ -104,7 +105,7 @@
                 <div class="cont-titulo">
                     <h1><a name="audio">Audio</a></h1>
                     <div class="descripcion">
-                        <p>En Ta' Om producciones ofrecemos ditintas formas de trabajo</p>
+                        <p>En Ta' Om producciones ofrecemos distintas formas de trabajo</p>
                     </div>
                 </div>
 
@@ -112,18 +113,16 @@
                     <div class="columns-prod-type">
                         <ul class="price">
                             <li class="header">Producción a distancia</li>
-                            <li class="grey">Un estudio de producción musical remoto a tu alcance. Desde la comodidad de tu casa. </li>
-                            <li>Streaming </li>
+                            <li>Un estudio de producción musical remoto a tu alcance. Desde la comodidad de tu casa. </li>
 
-                            <li class="grey"><a href="#" class="button">Conocer más</a></li>
+                            <li class="grey"><a href="documentos/Aislamuro.pdf" target="_blank" class="button">Conocer más</a></li>
                         </ul>
                     </div>
 
                     <div class="columns-prod-type">
                         <ul class="price">
                             <li class="header">Producción en locación</li>
-                            <li class="grey">Un estudio de producción móvil, grabamos, editamos y post producimos en locación. </li>
-                            <li>Streaming </li>
+                            <li>Un estudio de producción móvil, grabamos, editamos y post producimos en locación. </li>
                             <li class="grey"><a href="#" class="button">Conocer más</a></li>
                         </ul>
                     </div>
@@ -131,8 +130,7 @@
                     <div class="columns-prod-type">
                         <ul class="price">
                             <li class="header">Producción en estudio</li>
-                            <li class="grey">La Forma de trabajo tradicional, trabajemos conjuntamente, en nuestros estudios. </li>
-                            <li>Streaming </li>
+                            <li>La Forma de trabajo tradicional, trabajemos conjuntamente, en nuestros estudios. </li>
                             <li class="grey"><a href="#" class="button">Conocer más</a></li>
                         </ul>
                     </div>
@@ -143,15 +141,17 @@
                 <div class="cont-gallery-serv">
                     <div class="servicios-gallery">
                         <div class="servicios-row">
+
+                          <!-- Columna 1 -->
                             <div class="servicios-column">
-                                <!-- 1 foto -->
+                                <!-- 1 foto col 1 -->
                                 <div class="">
                                     <h2>
                                         <a name="au-stream"> </a>
                                     </h2>
                                     <div class="cont-img-text">
                                         <img src="images/servicios/Stream.png" onclick="mostrarImgServ('stream');" class="img-overlay">
-                                        <div class="middle-text">
+                                        <div class="middle-text" onclick="mostrarImgServ('stream');">
                                             <div class="text-overlay">Contactanos</div>
                                         </div>
                                     </div>
@@ -163,52 +163,14 @@
                                     </div>
                                 </div>
 
-                                <!-- 2 foto -->
-                                <div class="">
-                                    <h2>
-                                        <a name="au-beat"></a>
-                                    </h2>
-                                    <div class="cont-img-text">
-                                        <img src="images/servicios/Beatmaking.png" onclick="mostrarImgServ('beat');" class="img-overlay">
-                                        <div class="middle-text">
-                                            <div class="text-overlay">Precios</div>
-                                        </div>
-                                    </div>
-                                    <div id="ImgBeat" class="img-cont">
-                                        <h2>Beatmaking </h2>
-                                        <p>
-                                            Beats instrumentales a través de licencias
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <!-- 3 foto -->
-                                <div class="">
-                                    <h2>
-                                        <a name="au-cover"></a>
-                                    </h2>
-                                    <div class="cont-img-text">
-                                        <img src="images/servicios/Cover.png" onclick="mostrarImgServ('cover');" class="img-overlay">
-                                        <div class="middle-text">
-                                            <div class="text-overlay">Precios</div>
-                                        </div>
-                                    </div>
-                                    <div id="ImgCover" class="img-cont">
-                                        <h2>Cover</h2>
-                                        <p>
-                                            Graba tu canción favorita.
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <!-- 4 foto -->
+                                <!-- 2 foto col 1-->
                                 <div class="">
                                     <h2>
                                         <a name="au-single"></a>
                                     </h2>
                                     <div class="cont-img-text">
                                         <img src="images/servicios/Single.png" onclick="mostrarImgServ('single');" class="img-overlay">
-                                        <div class="middle-text">
+                                        <div class="middle-text" onclick="mostrarImgServ('single');">
                                             <div class="text-overlay">Precios</div>
                                         </div>
                                     </div>
@@ -219,54 +181,15 @@
                                         </p>
                                     </div>
                                 </div>
-                            </div>
 
-
-                            <div class="servicios-column">
-                                <!-- 5 foto -->
-                                <div class="">
-                                    <h2>
-                                        <a name="au-album"></a>
-                                    </h2>
-                                    <div class="cont-img-text">
-                                        <img src="images/servicios/Album.png" onclick="mostrarImgServ('album');" class="img-overlay">
-                                        <div class="middle-text">
-                                            <div class="text-overlay">Precio</div>
-                                        </div>
-                                    </div>
-                                    <div id="ImgAlbum" class="img-cont">
-                                        <h2>Álbum</h2>
-                                        <p>Graba el álbum de tu banda.</p>
-                                    </div>
-                                </div>
-
-                                <!-- 6 foto -->
-                                <div class="">
-                                    <h2>
-                                        <a name="au-diseño"></a>
-                                    </h2>
-                                    <div class="cont-img-text">
-                                        <img src="images/servicios/Diseño.png" onclick="mostrarImgServ('diseno');" class="img-overlay">
-                                        <div class="middle-text">
-                                            <div class="text-overlay">Contactanos</div>
-                                        </div>
-                                    </div>
-                                    <div id="ImgDiseno" class="img-cont">
-                                        <h2>Diseño sonoro</h2>
-                                        <p>
-                                            Diseño sonoro para peliculas y empresarial.
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <!-- 7 foto -->
+                                <!-- 3 foto col 1-->
                                 <div class="">
                                     <h2>
                                         <a name="au-radio"></a>
                                     </h2>
                                     <div class="cont-img-text">
                                         <img src="images/servicios/Radio.png" onclick="mostrarImgServ('radio');" class="img-overlay">
-                                        <div class="middle-text">
+                                        <div class="middle-text" onclick="mostrarImgServ('radio');">
                                             <div class="text-overlay">Contactanos</div>
                                         </div>
                                     </div>
@@ -278,53 +201,14 @@
                                     </div>
                                 </div>
 
-                                <!-- 8 foto -->
-                                <div class="">
-                                    <h2>
-                                        <a name="au-demo"></a>
-                                    </h2>
-                                    <div class="cont-img-text">
-                                        <img src="images/servicios/Demo.png" onclick="mostrarImgServ('demo');" class="img-overlay">
-                                        <div class="middle-text">
-                                            <div class="text-overlay">Precios</div>
-                                        </div>
-                                    </div>
-                                    <div id="ImgDemo" class="img-cont">
-                                        <h2>Demo Reel</h2>
-                                        <p>
-                                            Muestra tu talento.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="servicios-column">
-                                <!-- 9 foto -->
-                                <div class="">
-                                    <h2>
-                                        <a name="au-adr"></a>
-                                    </h2>
-                                    <div class="cont-img-text">
-                                        <img src="images/servicios/ADR.png" onclick="mostrarImgServ('adr');" class="img-overlay">
-                                        <div class="middle-text">
-                                            <div class="text-overlay">Contactanos</div>
-                                        </div>
-                                    </div>
-                                    <div id="ImgAdr" class="img-cont">
-                                        <h2>ADR</h2>
-                                        <p>
-                                            Servicios de doblaje.
-                                        </p>
-                                    </div>
-                                </div>
-                                <!-- 10 foto -->
+                                <!-- 4 foto col 1-->
                                 <div class="">
                                     <h2>
                                         <a name="au-mezcla"></a>
                                     </h2>
                                     <div class="cont-img-text">
                                         <img src="images/servicios/Mix.png" onclick="mostrarImgServ('mix');" class="img-overlay">
-                                        <div class="middle-text">
+                                        <div class="middle-text" onclick="mostrarImgServ('mix');">
                                             <div class="text-overlay">Precios</div>
                                         </div>
                                     </div>
@@ -335,14 +219,77 @@
                                         </p>
                                     </div>
                                 </div>
-                                <!-- 11 foto -->
+
+                            </div>
+
+                            <!-- Columna 2 -->
+                            <div class="servicios-column">
+                                <!-- 1 foto col 2-->
+                                <div class="">
+                                    <h2>
+                                        <a name="au-beat"></a>
+                                    </h2>
+                                    <div class="cont-img-text">
+                                        <img src="images/servicios/Beatmaking.png" onclick="mostrarImgServ('beat');" class="img-overlay">
+                                        <div class="middle-text" onclick="mostrarImgServ('beat');">
+                                            <div class="text-overlay">Precios</div>
+                                        </div>
+                                    </div>
+                                    <div id="ImgBeat" class="img-cont">
+                                        <h2>Beatmaking </h2>
+                                        <p>
+                                            Beats instrumentales a través de licencias
+                                        </p>
+                                    </div>
+                                </div>
+
+
+                                <!-- 2 foto  col 2-->
+                                <div class="">
+                                    <h2>
+                                        <a name="au-album"></a>
+                                    </h2>
+                                    <div class="cont-img-text">
+                                        <img src="images/servicios/Album.png" onclick="mostrarImgServ('album');" class="img-overlay">
+                                        <div class="middle-text" onclick="mostrarImgServ('album');">
+                                            <div class="text-overlay">Precio</div>
+                                        </div>
+                                    </div>
+                                    <div id="ImgAlbum" class="img-cont">
+                                        <h2>Álbum</h2>
+                                        <p>Graba el álbum de tu banda.</p>
+                                    </div>
+                                </div>
+
+                                <!-- 3 foto col 2-->
+                                <div class="">
+                                    <h2>
+                                        <a name="au-demo"></a>
+                                    </h2>
+                                    <div class="cont-img-text">
+                                        <img src="images/servicios/Demo.png" onclick="mostrarImgServ('demo');" class="img-overlay">
+                                        <div class="middle-text" onclick="mostrarImgServ('demo');">
+                                            <div class="text-overlay">Precios</div>
+                                        </div>
+                                    </div>
+                                    <div id="ImgDemo" class="img-cont">
+                                        <h2>Demo Reel</h2>
+                                        <p>
+                                            Muestra tu talento.
+                                        </p>
+                                    </div>
+                                </div>
+
+
+
+                                <!-- 4 foto col 2-->
                                 <div class="">
                                     <h2>
                                         <a name="au-master"></a>
                                     </h2>
                                     <div class="cont-img-text">
                                         <img src="images/servicios/Master.png" onclick="mostrarImgServ('master');" class="img-overlay">
-                                        <div class="middle-text">
+                                        <div class="middle-text" onclick="mostrarImgServ('master');">
                                             <div class="text-overlay">Precios</div>
                                         </div>
                                     </div>
@@ -353,16 +300,85 @@
                                         </p>
                                     </div>
                                 </div>
-                                <!-- 12 foto -->
-                                <div class="invisible">
+
+                            </div>
+
+
+                            <!-- Columna 3 -->
+                            <div class="servicios-column">
+                                <!-- 1 foto col 3-->
+                                <div class="">
                                     <h2>
-                                        <a name="au-master"></a>
+                                        <a name="au-cover"></a>
                                     </h2>
-                                    <img src="images/galeria/Taking-a-walk.png" class="img-overlay">
-                                    <div class="img-cont">
-                                        <h2>master</h2>
+                                    <div class="cont-img-text">
+                                        <img src="images/servicios/Cover.png" onclick="mostrarImgServ('cover');" class="img-overlay">
+                                        <div class="middle-text" onclick="mostrarImgServ('cover');">
+                                            <div class="text-overlay">Precios</div>
+                                        </div>
+                                    </div>
+                                    <div id="ImgCover" class="img-cont">
+                                        <h2>Cover</h2>
                                         <p>
-                                            Aqui va el contenido de Master
+                                            Graba tu canción favorita.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- 2 foto col 3-->
+                                <div class="">
+                                    <h2>
+                                        <a name="au-diseño"></a>
+                                    </h2>
+                                    <div class="cont-img-text">
+                                        <img src="images/servicios/Diseño.png" onclick="mostrarImgServ('diseno');" class="img-overlay">
+                                        <div class="middle-text" onclick="mostrarImgServ('diseno');">
+                                            <div class="text-overlay">Contactanos</div>
+                                        </div>
+                                    </div>
+                                    <div id="ImgDiseno" class="img-cont">
+                                        <h2>Diseño sonoro</h2>
+                                        <p>
+                                            Diseño sonoro para peliculas y empresarial.
+                                        </p>
+                                    </div>
+                                </div>
+
+
+                                <!-- 3 foto col 3-->
+                                <div class="">
+                                    <h2>
+                                        <a name="au-adr"></a>
+                                    </h2>
+                                    <div class="cont-img-text">
+                                        <img src="images/servicios/ADR.png" onclick="mostrarImgServ('adr');" class="img-overlay">
+                                        <div class="middle-text" onclick="mostrarImgServ('adr');">
+                                            <div class="text-overlay">Contactanos</div>
+                                        </div>
+                                    </div>
+                                    <div id="ImgAdr" class="img-cont">
+                                        <h2>ADR</h2>
+                                        <p>
+                                            Servicios de doblaje.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- 4 foto col 3-->
+                                <div class="">
+                                    <h2>
+                                        <a name="au-rest"></a>
+                                    </h2>
+                                    <div class="cont-img-text">
+                                        <img src="images/servicios/ADR.png" onclick="mostrarImgServ('rest');" class="img-overlay">
+                                        <div class="middle-text" onclick="mostrarImgServ('rest');">
+                                            <div class="text-overlay">Contactanos</div>
+                                        </div>
+                                    </div>
+                                    <div id="ImgRest" class="img-cont">
+                                        <h2>Restauración</h2>
+                                        <p>
+                                            Restaura y mejora tu audio.
                                         </p>
                                     </div>
                                 </div>
@@ -375,46 +391,42 @@
 
                 <!-- Ventanas Modales-->
                 <div id="myStream" class="modal">
-                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <span class="close cursor" onclick="closeModal('stream')">&times;</span>
                     <div class="modal-content">
                         <div class="cont-img-text">
                             <img src="images/servicios/Stream.png" style="width:100%">
                             <div class="middle-text-info">
                                 <div id="text-info" class="text-overlay-info">
-                                    <h1>Streaming</h1>
-                                    <p>Desde $10,000</p>
+                                    <h2>Streaming</h2>
+                                    <p>Soluciona tus problemas de transmisión con nuestra asesoría</p>
                                 </div>
                             </div>
-                            <div class="text-overlay">Contacto</div>
+                            <div  class="text-overlay"><a href="contacto.html#featured">Contacto</a></div>
                         </div>
                     </div>
                 </div>
 
                 <div id="myBeat" class="modal">
-                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <span class="close cursor" onclick="closeModal('beat')">&times;</span>
                     <div class="modal-content">
                         <div class="cont-img-text">
-                            <img src="images/servicios/Beatmaking.png" style="width:100%">
+                            <img src="images/servicios/licencias.jpg" style="width:100%">
                             <div class="middle-text-info">
-                                <div id="text-info" class="text-overlay-info">
-                                    <h1>Beatmaking</h1>
-                                    <p>Desde $10,000</p>
-                                </div>
                             </div>
-                            <div class="text-overlay">Contacto</div>
+                            <div class="text-overlay"><a href="contacto.html#featured">Contacto</a></div>
                         </div>
                     </div>
                 </div>
 
                 <div id="myCover" class="modal">
-                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <span class="close cursor" onclick="closeModal('cover')">&times;</span>
                     <div class="modal-content">
                         <div class="cont-img-text">
                             <img src="images/servicios/Cover.png" style="width:100%">
                             <div class="middle-text-info">
                                 <div id="text-info" class="text-overlay-info">
-                                    <h1>Cover</h1>
-                                    <p>Desde $10,000</p>
+                                    <h2>Cover</h2>
+                                    <p>¡Lanza tu cover, no pierdas tiempo!</p>
                                 </div>
                             </div>
                             <div class="text-overlay">Contacto</div>
@@ -423,14 +435,14 @@
                 </div>
 
                 <div id="mySingle" class="modal">
-                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <span class="close cursor" onclick="closeModal('single')">&times;</span>
                     <div class="modal-content">
                         <div class="cont-img-text">
                             <img src="images/servicios/Single.png" style="width:100%">
                             <div class="middle-text-info">
                                 <div id="text-info" class="text-overlay-info">
-                                    <h1>Single</h1>
-                                    <p>Desde $10,000</p>
+                                    <h2>Single</h2>
+                                    <p>Desde $800</p>
                                 </div>
                             </div>
                             <div class="text-overlay">Contacto</div>
@@ -439,14 +451,15 @@
                 </div>
 
                 <div id="myAlbum" class="modal">
-                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <span class="close cursor" onclick="closeModal('album')">&times;</span>
                     <div class="modal-content">
                         <div class="cont-img-text">
                             <img src="images/servicios/Album.png" style="width:100%">
                             <div class="middle-text-info">
                                 <div id="text-info" class="text-overlay-info">
-                                    <h1>Álbum</h1>
+                                    <h2>Álbum</h2>
                                     <p>Desde $10,000</p>
+                                    <p>Los precios varían según el numero de canciones</p>
                                 </div>
                             </div>
                             <div class="text-overlay">Contacto</div>
@@ -455,14 +468,14 @@
                 </div>
 
                 <div id="myDiseno" class="modal">
-                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <span class="close cursor" onclick="closeModal('diseno')">&times;</span>
                     <div class="modal-content">
                         <div class="cont-img-text">
                             <img src="images/servicios/Diseño.png" style="width:100%">
                             <div class="middle-text-info">
                                 <div id="text-info" class="text-overlay-info">
-                                    <h1>Diseño Sonoro</h1>
-                                    <p>Desde $10,000</p>
+                                    <h2>Diseño Sonoro</h2>
+                                    <p>Los precios varían según el  tiempo y uso</p>
                                 </div>
                             </div>
                             <div class="text-overlay">Contacto</div>
@@ -471,14 +484,14 @@
                 </div>
 
                 <div id="myRadio" class="modal">
-                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <span class="close cursor" onclick="closeModal('radio')">&times;</span>
                     <div class="modal-content">
                         <div class="cont-img-text">
                             <img src="images/servicios/Radio.png" style="width:100%">
                             <div class="middle-text-info">
                                 <div id="text-info" class="text-overlay-info">
-                                    <h1>Radioteatro y Radionovela</h1>
-                                    <p>Desde $10,000</p>
+                                    <h2>Radioteatro y Radionovela</h2>
+                                    <p>Graba tu radio-teatro y nosotros lo sonorizamos</p>
                                 </div>
                             </div>
                             <div class="text-overlay">Contacto</div>
@@ -487,14 +500,14 @@
                 </div>
 
                 <div id="myDemo" class="modal">
-                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <span class="close cursor" onclick="closeModal('demo')">&times;</span>
                     <div class="modal-content">
                         <div class="cont-img-text">
                             <img src="images/servicios/Demo.png" style="width:100%">
                             <div class="middle-text-info">
                                 <div id="text-info" class="text-overlay-info">
-                                    <h1>Demo Reel</h1>
-                                    <p>Desde $10,000</p>
+                                    <h2>Demo Reel</h2>
+                                    <p>Armamos un demo profesional de manera conjunta</p>
                                 </div>
                             </div>
                             <div class="text-overlay">Contacto</div>
@@ -503,14 +516,14 @@
                 </div>
 
                 <div id="myAdr" class="modal">
-                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <span class="close cursor" onclick="closeModal('adr')">&times;</span>
                     <div class="modal-content">
                         <div class="cont-img-text">
                             <img src="images/servicios/ADR.png" style="width:100%">
                             <div class="middle-text-info">
                                 <div id="text-info" class="text-overlay-info">
-                                    <h1>Aditional Dialogue Recording </h1>
-                                    <p>Desde $10,000</p>
+                                    <h2>Doblaje</h2>
+                                    <p>ADR, voz en off y doblaje</p>
                                 </div>
                             </div>
                             <div class="text-overlay">Contacto</div>
@@ -519,14 +532,14 @@
                 </div>
 
                 <div id="myMix" class="modal">
-                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <span class="close cursor" onclick="closeModal('mix')">&times;</span>
                     <div class="modal-content">
                         <div class="cont-img-text">
                             <img src="images/servicios/Mix.png" style="width:100%">
                             <div class="middle-text-info">
                                 <div id="text-info" class="text-overlay-info">
-                                    <h1>Mezcla</h1>
-                                    <p>Desde $10,000</p>
+                                    <h2>Mezcla</h2>
+                                    <p>Mezcla multitrack, precios varían dependiendo el número de canales y la duración de la obra</p>
                                 </div>
                             </div>
                             <div class="text-overlay">Contacto</div>
@@ -535,14 +548,30 @@
                 </div>
 
                 <div id="myMaster" class="modal">
-                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <span class="close cursor" onclick="closeModal('master')">&times;</span>
                     <div class="modal-content">
                         <div class="cont-img-text">
                             <img src="images/servicios/Master.png" style="width:100%">
                             <div class="middle-text-info">
                                 <div id="text-info" class="text-overlay-info">
-                                    <h1>Mastering</h1>
-                                    <p>Desde $10,000</p>
+                                    <h2>Mastering</h2>
+                                    <p>Mastering y Mastering por steams</p>
+                                </div>
+                            </div>
+                            <div class="text-overlay">Contacto</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="myRest" class="modal">
+                    <span class="close cursor" onclick="closeModal('rest')">&times;</span>
+                    <div class="modal-content">
+                        <div class="cont-img-text">
+                            <img src="images/servicios/Master.png" style="width:100%">
+                            <div class="middle-text-info">
+                                <div id="text-info" class="text-overlay-info">
+                                    <h2>Restauración</h2>
+                                    <p>Restauración y limpieza de audio</p>
                                 </div>
                             </div>
                             <div class="text-overlay">Contacto</div>
@@ -570,7 +599,7 @@
                         </ul>
                     </div>
                     <div class="cont-video">
-                        <iframe class="video-cont" src="https://www.youtube.com/embed/-Dm4bXw4LS4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/-Dm4bXw4LS4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
 

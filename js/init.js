@@ -101,26 +101,54 @@ function mostrarImgServ(x) {
 	if (x=='master') {
 			document.getElementById("myMaster").style.display = "block";
 	}
+	if (x=='rest') {
+			document.getElementById("myRest").style.display = "block";
+	}
 
 }
 
 
 
 //cerrar ventana modal con x y click en pantalla
-function closeModal() {
-	document.getElementById("myModal").style.display = "none";
-	document.getElementById("myStream").style.display = "none";
-	document.getElementById("myBeat").style.display = "none";
-	document.getElementById("myCover").style.display = "none";
-	document.getElementById("mySingle").style.display = "none";
-	document.getElementById("myAlbum").style.display = "none";
-	document.getElementById("myDiseno").style.display = "none";
-  document.getElementById("myRadio").style.display = "none"; // cierra la ventana modal
-	document.getElementById("myDemo").style.display = "none"; // cierra la ventana modal
-	document.getElementById("myAdr").style.display = "none";
-	document.getElementById("myMix").style.display = "none";
-	document.getElementById("myMaster").style.display = "none";
+function closeModal(x) {
+	if (x=='stream') {
+			document.getElementById("myStream").style.display = "none";
+	}
+	if (x=='beat') {
+			document.getElementById("myBeat").style.display = "none";
+	}
+	if (x=='cover') {
+			document.getElementById("myCover").style.display = "none";
+	}
+	if (x=='single') {
+			document.getElementById("mySingle").style.display = "none";
+	}
+	if (x=='album') {
+			document.getElementById("myAlbum").style.display = "none";
+	}
+	if (x=='diseno') {
+			document.getElementById("myDiseno").style.display = "none";
+	}
+	if (x=='radio') {
+			document.getElementById("myRadio").style.display = "none";
+	}
+	if (x=='demo') {
+			document.getElementById("myDemo").style.display = "none";
+	}
+	if (x=='adr') {
+			document.getElementById("myAdr").style.display = "none";
+	}
+	if (x=='mix') {
+			document.getElementById("myMix").style.display = "none";
+	}
+	if (x=='master') {
+			document.getElementById("myMaster").style.display = "none";
+	}
+	if (x=='rest') {
+			document.getElementById("myRest").style.display = "none";
+	}
 }
+
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
@@ -159,6 +187,9 @@ window.onclick = function(event) {
 	}
 	if (event.target == document.getElementById("myMaster")) {
 	document.getElementById("myMaster").style.display = "none";
+	}
+	if (event.target == document.getElementById("myRest")) {
+	document.getElementById("myRest").style.display = "none";
 	}
 }
 
@@ -199,6 +230,9 @@ function seleccionar(y) {
 		if (y=='NavMaster') {
 				document.getElementById("ImgMaster").style.background="#4CAF50";
 		}
+		if (y=='NavRest') {
+				document.getElementById("ImgRest").style.background="#4CAF50";
+		}
 }
 
 function desseleccionar(z) {
@@ -213,4 +247,5 @@ function desseleccionar(z) {
 		document.getElementById("ImgAdr").style.background="none";
 		document.getElementById("ImgMix").style.background="none";
 		document.getElementById("ImgMaster").style.background="none";
+		document.getElementById("ImgRest").style.background="none";
 }
